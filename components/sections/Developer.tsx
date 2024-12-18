@@ -35,7 +35,7 @@ export default function Developer() {
               <div className="flex gap-4 items-center">
               
                 <Image
-                  src="/qr code.webp" // Ensure the correct path
+                  src="/qr code.webp" 
                   alt="QR Code"
                   width={150}
                   height={150}

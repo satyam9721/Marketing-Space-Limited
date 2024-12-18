@@ -14,7 +14,7 @@ export function useActiveSection() {
         });
       },
       {
-        threshold: 0.3, // Trigger when at least 30% of the section is visible
+        threshold: 0.3, 
       }
     );
 

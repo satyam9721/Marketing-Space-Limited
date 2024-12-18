@@ -20,11 +20,11 @@ export default function PriceTable() {
     <div className="container mx-auto p-4">
       <h2 className="text-3xl font-bold mb-6 text-[#1e3a8a]">Price</h2>
 
-      {/* Responsive Grid Layout */}
+     
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        {/* Price Section */}
+       
         <div className="lg:col-span-2">
-          {/* Mobile View: Cards */}
+         
           <div className="grid gap-4 lg:hidden">
             {priceData.map((item, index) => (
               <div
@@ -49,7 +49,7 @@ export default function PriceTable() {
             ))}
           </div>
 
-          {/* Desktop View: Table */}
+         
           <div className="hidden lg:block">
             <table className="w-full border-collapse border border-gray-300">
               <thead>
@@ -83,13 +83,13 @@ export default function PriceTable() {
             </table>
           </div>
 
-          {/* Floors Info */}
+         
           <div className="mt-8 bg-[#0a0f2c] text-white py-4 text-center rounded-md">
             <h3 className="text-lg md:text-xl">Floors: G + 35 storeys (Shop and Parking)</h3>
           </div>
         </div>
 
-        {/* Complete Costing Details Section */}
+        
         <div className="col-span-1">
           <div className="bg-white border border-gray-300 rounded-lg shadow-md p-4 w-full">
             <h3 className="bg-[#1e3a8a] text-white text-center py-2 rounded-md text-lg font-semibold">
@@ -108,7 +108,7 @@ export default function PriceTable() {
         </div>
       </div>
 
-      {/* Dialog for Costing Details */}
+      
       <Dialog open={showCostingDetails} onOpenChange={setShowCostingDetails}>
         <DialogContent className="max-w-3xl">
           <DialogHeader>

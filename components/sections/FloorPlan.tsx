@@ -32,12 +32,12 @@ export default function FloorPlan() {
   return (
     <section id="floor-plan" className="py-16 ">
       <div className="container mx-auto px-8">
-        {/* Title Section */}
+   
         <h2 className="text-3xl font-bold text-start text-blue-800 mb-4">
           Site & Floor Plan Of Sai World Dreams
         </h2>
 
-        {/* Master Plan Section */}
+       
         <div className="mb-12 text-center">
           <h3 className="text-2xl font-semibold mb-4 text-start">Master Plan</h3>
           <div className="flex justify-center">
@@ -51,7 +51,7 @@ export default function FloorPlan() {
           </div>
         </div>
 
-        {/* Floor Plans Section */}
+      
         <div>
           <h3 className="text-2xl font-semibold text-start mb-6">
             Floor Plans
@@ -62,21 +62,21 @@ export default function FloorPlan() {
                 key={index}
                 className="relative group bg-white rounded-lg overflow-hidden shadow-md"
               >
-                {/* Floor Plan Image */}
+                
                 <img
                   src={plan.image}
                   alt={`${plan.type} Floor Plan`}
                   className="w-full h-[250px] object-contain"
                 />
 
-                {/* ENQUIRE NOW Overlay */}
+                
                 <div className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 group-hover:opacity-100 transition-all duration-500">
                   <div className="text-white text-lg font-semibold">
                     ENQUIRE NOW
                   </div>
                 </div>
 
-                {/* Card Footer */}
+                
                 <div className="bg-[#1e3a8a] text-white text-center py-2 text-lg font-semibold z-10">
                   {plan.type} - {plan.area}
                 </div>

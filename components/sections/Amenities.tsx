@@ -71,7 +71,7 @@ export default function Amenities() {
         </h2>
 
         <div className="relative">
-          {/* Carousel Content */}
+          
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {amenities.slice(currentSlide, currentSlide + 6).map((amenity, index) => (
               <div
@@ -90,7 +90,7 @@ export default function Amenities() {
             ))}
           </div>
 
-          {/* Navigation Buttons */}
+        
           <button
             onClick={prevSlide}
             className="absolute left-0 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow-lg"
